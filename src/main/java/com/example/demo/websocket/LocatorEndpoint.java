@@ -26,6 +26,11 @@ public class LocatorEndpoint {
         }
     }
 
+    @OnMessage
+    public void onMessage(Session session, String message) throws IOException {
+
+    }
+
     @OnClose
     public void onClose(Session session) throws IOException {
         System.out.println("已经断开");
