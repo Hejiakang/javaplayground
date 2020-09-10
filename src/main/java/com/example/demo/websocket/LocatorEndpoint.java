@@ -10,7 +10,11 @@ import java.io.IOException;
 /**
  * 本类中websocket 的ServerEndpoint和onOpen等注解及其相关功能由javax提供，可以在web容器环境使用
  * 如果在spring boot中使用，需要用@Component注解，目的是交由spring管理
- * 注意：本类的对象不是单例的，每建立一个websocket连接就会创建一个新的对象
+ * ⚠️ 本类的对象不是单例的，每建立一个websocket连接就会创建一个新的对象
+ *
+ * 参考：
+ * https://www.baeldung.com/java-websockets
+ * https://blog.csdn.net/shuaishuai1234/article/details/99713187
  * @author HaoKangKang healthhealthgood@gmail.com 2020-09-10 16:43
  **/
 @ServerEndpoint(value="/locator")
